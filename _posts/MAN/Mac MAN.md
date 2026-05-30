@@ -9,8 +9,6 @@ tags: [UNIX, MAN]
 
 # Mac Manual
 
-## 环境变量配置
-
 [TOC]
 
 #### 0. zsh常用命令

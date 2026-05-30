@@ -167,6 +167,33 @@ git add -u
 git rm -cached file.md
 ```
 
+如果之前操作错误，应当在本地先进行revert：
+
+```zsh
+git revert HEAD
+git push
+```
+
+如果还没提交，可以选择撤销添加但分为保留暂存、保留或不保留本地修改：
+
+```zsh
+git reset -soft HEAD~1
+```
+
+
+
+```zsh
+git reset -mixed HEAD~1
+```
+
+
+
+```zsh
+git reset -hard HEAD~1
+```
+
+
+
 #### 7. GitHub Token操作
 
 使用SSH登陆一般比Token登陆相对更安全，因其可以额外设置passphase。

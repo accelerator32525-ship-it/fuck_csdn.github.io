@@ -1,8 +1,8 @@
 ---
 title: Git MAN
 date: 2026-5-30
-categories: [UNIX,MAN]
-tags: [CLI,MAN]
+categories: [UNIX,CLI,MAN]
+tags: [UNIX,CLI,MAN]
 ---
 
 
@@ -24,6 +24,8 @@ brew install git
 3. **commit应保持简洁规范的格式**：如feat(feature)，refactor等
 4. **不应提交临时文件**：不要把构建文件和无意义文件提交上仓库
 5. **上传push前应自查**：检查status、diff等，确认上述原则已遵守
+
+------
 
 #### 1. 账户配置
 

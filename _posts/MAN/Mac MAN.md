@@ -1,8 +1,8 @@
 ---
 title: Mac MAN
 date: 2026-5-30
-categories: [MAC,UNIX,MAN]
-tags: [UNIX, MAN]
+categories: [UNIX,CLI,MAN]
+tags: [UNIX,CLI,MAN]
 ---
 
 
@@ -213,11 +213,7 @@ eval
 >
 > 有时和$()搭配使用
 
-
-
-
-
-
+------
 
 #### 1. Homebrew安装
 

@@ -49,7 +49,7 @@ git init
 ##### 远程仓库
 
 ```zsh
-git clone https://xxx.git
+git clone https://[your_token]@xxx.git
 ```
 
 修改远程仓库必须重新拉取，这样的仓库自带.git，不要再init，特别是在其子文件夹里。
@@ -66,6 +66,8 @@ git status
 
 一次add、commit、push只应添加一个修改，修改完毕应该先检查状态，以防提交错误。（能多个add与commit分开一次性提交，还是得封城两次push
 
+##### .gitignore文件
+
 不想提交的文件应当写入.gitignore文件。
 
 ```.gitignore
@@ -81,6 +83,12 @@ Thumbs.db
 有一点容易混淆的是，\**/是专门针对**文件夹**全层级递归的，而文件一般**直接写入就是全局生效**；temp/只对当前文件夹生效，而文件必须加**/**Senshado.log才能达到那种目的。
 
 .gitignore文件也应提交。
+
+强烈建议在用户目录中添加全局屏蔽文件.gitignore_global
+
+```zsh
+git conifg -global core.excludesfile ~/.gitignore_global
+```
 
 如果提交空文件夹结构，可以在文件中加入.gitkeep：
 
